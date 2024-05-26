@@ -3,7 +3,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 setuptools.setup(
     name="simscv",
-    version="0.1.0",
+    version="0.0.2",
     author="Kanra_Ishido",
     author_email="s2222002@stu.musashino-u.ac.jp",
     description="A simple csv reader",
@@ -27,4 +27,9 @@ setuptools.setup(
         'scikit-learn',
         'scipy'
     ],
+    entry_points={
+        'console_scripts': [
+            'simscv = simscv:main'
+        ]
+    }
 )
